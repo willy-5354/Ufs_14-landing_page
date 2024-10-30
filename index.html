@@ -6,13 +6,142 @@
     <title>landing_page</title>
     <link rel="stylesheet" href="assets/fonts/">
     <link rel="stylesheet" href="assets/images/">
-    <link rel="stylesheet" href="assets/scripts/app.js">
     <link rel="stylesheet" href="assets/styles/reset.css">
     <link rel="stylesheet" href="assets/styles/main.css">
 </head>
 <body>
+     <!-- Hero Section -->
+     <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Impara l'Inglese con i Migliori Madrelingua</h1>
+                    <p>Lezioni online personalizzate, guide scaricabili e supporto chat 24/7</p>
+                    <div class="cta-button">1 MESE GRATIS - Prova Ora!</div>
+                </div>
+                <div class="hero-image">
+                    <img src="/api/placeholder/600/400" alt="Studenti che imparano l'inglese">
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Lezioni Online</h3>
+                    <p>Accedi alle lezioni quando vuoi, da qualsiasi dispositivo</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Chat con Madrelingua</h3>
+                    <p>Supporto immediato dai nostri insegnanti qualificati</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-file-download"></i>
+                    <h3>Guide Scaricabili</h3>
+                    <p>Materiale didattico completo per il tuo studio</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing-card">
+                <div class="pricing-content">
+                    <h3>Abbonamento Mensile</h3>
+                    <div class="price">
+                        <span class="amount">€14,90</span>
+                        <span class="period">/mese</span>
+                    </div>
+                    <ul class="benefits">
+                        <li><i class="fas fa-check"></i>Accesso illimitato alle lezioni</li>
+                        <li><i class="fas fa-check"></i>Chat con insegnanti madrelingua</li>
+                        <li><i class="fas fa-check"></i>Guide e materiali scaricabili</li>
+                        <li><i class="fas fa-check"></i>1 mese di prova gratuita</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Cosa Dicono i Nostri Studenti</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="/api/placeholder/50/50" alt="Student 1">
+                        <div>
+                            <h4>Marco Rossi</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Ho migliorato il mio inglese in soli 3 mesi. Gli insegnanti sono fantastici e sempre disponibili!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="/api/placeholder/50/50" alt="Student 2">
+                        <div>
+                            <h4>Laura Bianchi</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"La flessibilità delle lezioni online si adatta perfettamente ai miei orari di lavoro."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="/api/placeholder/50/50" alt="Student 3">
+                        <div>
+                            <h4>Giuseppe Verdi</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p>"Le guide scaricabili sono utilissime per ripassare. Servizio eccellente!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact">
+        <div class="container">
+            <div class="form-container">
+                <h2>Inizia il Tuo Mese Gratuito</h2>
+                <form id="contactForm" action="https://api.getresponse.com/v3/contacts" method="POST">
+                    <input type="hidden" name="campaign_token" value="xxxx">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cognome">Cognome</label>
+                        <input type="text" id="cognome" name="cognome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <button type="submit">Inizia Ora</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Corso di Inglese Online. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="assets/scripts/app.js"></script>
+
 </body>
 </html>
