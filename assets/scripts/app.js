@@ -61,7 +61,7 @@ async function submitToGetResponse(data) {
 
 // Funzione per mostrare il messaggio di successo
 function showSuccessMessage() {
-    alert('Modulo inviato con successo!');
+     window.location.href = 'https://app.getresponse.com/confirm.html?preview=preview&lid=0qE49'
 }
 
 // Funzione per mostrare il messaggio di errore
