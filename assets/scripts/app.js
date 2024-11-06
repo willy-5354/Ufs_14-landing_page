@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Raccolta dati del form
         const formData = {
-            name: document.getElementById('nome').value,
-            email: document.getElementById('email').value,
+            name: document.getElementById('nome').value.trim(),
+            email: document.getElementById('email').value.trim(),
             campaign_token: form.querySelector('[name="campaign_token"]').value
         };
 
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Funzione di validazione
 function validateForm(data) {
-    if (!data.name || !data.surname || !data.email) {
+    if (!data.name || !data.email) {
         alert('Per favore, compila tutti i campi richiesti.');
         return false;
     }
@@ -51,13 +51,17 @@ function validateForm(data) {
 
 // Funzione per l'invio a GetResponse
 async function submitToGetResponse(data) {
-    // Qui dovresti implementare la vera chiamata API a GetResponse
-    // Questo è solo un esempio di simulazione
+    // Simulazione di una chiamata API a GetResponse
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve({ success: true });
         }, 1000);
-    });_
+    });
+}
+
+// Funzione per mostrare il messaggio di successo
+function showSuccessMessage() {
+    alert('Modulo inviato con successo!');
 }
 
 // Funzione per mostrare il messaggio di errore
