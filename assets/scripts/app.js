@@ -30,9 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Errore durante l\'invio:', error);
             showErrorMessage();
         }
-    });
-});
-
+        
 // Funzione di validazione
 function validateForm(data) {
     if (!data.name || !data.email) {
@@ -49,15 +47,9 @@ function validateForm(data) {
     return true;
 }
 
-// Funzione per l'invio a GetResponse
-async function submitToGetResponse(data) {
-    // Simulazione di una chiamata API a GetResponse
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve({ success: true });
-        }, 1000);
-    });
-}
+// Se la validazione passa, esegue il reindirizzamento
+form.submit(); // Invia il modulo
+window.location.href = 'https://app.getresponse.com/confirm.html?preview=preview&lid=0qE49';
 
 // Funzione per mostrare il messaggio di successo
 function showSuccessMessage() {
@@ -67,4 +59,8 @@ function showSuccessMessage() {
 // Funzione per mostrare il messaggio di errore
 function showErrorMessage() {
     alert('Si è verificato un errore durante l\'invio. Per favore, riprova più tardi.');
-}
+    }
+
+});
+
+});
