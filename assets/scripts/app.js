@@ -61,11 +61,6 @@ async function submitToGetResponse(data) {
     });
 }
 
-// Funzione per mostrare il messaggio di successo
-function showSuccessMessage() {
-    alert('Grazie per la tua iscrizione! Ti contatteremo presto.');
-}
-
 // Funzione per mostrare il messaggio di errore
 function showErrorMessage() {
     alert('Si è verificato un errore durante l\'invio. Per favore, riprova più tardi.');
