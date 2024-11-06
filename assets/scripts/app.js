@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Funzione di validazione
 function validateForm(data) {
-    if (!data.name || !data.surname || !data.email) {
+    if (!data.name || !data.email) {
         alert('Per favore, compila tutti i campi richiesti.');
         return false;
     }
