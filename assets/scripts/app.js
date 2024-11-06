@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Raccolta dati del form
         const formData = {
             name: document.getElementById('nome').value,
-            surname: document.getElementById('cognome').value,
             email: document.getElementById('email').value,
             campaign_token: form.querySelector('[name="campaign_token"]').value
         };
@@ -58,7 +57,7 @@ async function submitToGetResponse(data) {
         setTimeout(() => {
             resolve({ success: true });
         }, 1000);
-    });
+    });_
 }
 
 // Funzione per mostrare il messaggio di errore
